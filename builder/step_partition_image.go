@@ -60,7 +60,7 @@ func partitionDOS(ui packer.Ui, config *Config) multistep.StepAction {
 			partition.Type,
 		)
 
-		if partition.StartSector != 0 {
+		if partition.StartSector != "0" {
 			line = line + fmt.Sprintf(", start=%d", partition.StartSector)
 		}
 

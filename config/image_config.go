@@ -15,7 +15,7 @@ type Partition struct {
 	Name        string `mapstructure:"name"`
 	Type        string `mapstructure:"type"`
 	Size        string `mapstructure:"size"`
-	StartSector int    `mapstructure:"start_sector"`
+	StartSector string `mapstructure:"start_sector"`
 	Filesystem  string `mapstructure:"filesystem"`
 	Mountpoint  string `mapstructure:"mountpoint"`
 }
